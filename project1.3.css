@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('fonts/TTLakes-Regular.eot');
+    src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Regular.woff') format('woff'),
+    url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body {
+    display: flex;
+    min-width: 320px;
+    min-height: 600px;
+    font-family: 'TT Lakes Regular', sans-serif;
+    flex-wrap: wrap;
+}
+.header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+
+}
+.logo__button {
+    background:transparent;
+    border: white;
+    margin-right: 20px;
+    position: fixed;
+    top: 15px;
+    left: 60px;
+}
+.list li:nth-child(4) {
+    position: fixed;
+    right: 100px;
+}
+.list li:nth-child(5) {
+    position: fixed;
+    right: 20px;
+}
+.logo__button::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #EAEAEA;
+    top: 5px;
+    width: 3px;
+    height: 35px;
+    margin-left: 120px;
+
+}
+
+.logo:hover {
+    opacity: 50%;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+
+}
+.list li {
+    margin-right: 10px;
+}
+.list__button {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    padding: 10px;
+    border: #FF3E79;
+    width: 40px;
+    height: 40px;
+}
+.list__button:hover {
+    opacity: 0.7;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #7E7E82;
+    font-size: 18px;
+
+    width: 1200px;
+}
+.options li {
+    margin-right: 20px;
+    overflow: auto;
+}
+.info {
+    background-color: #F8F8F8;
+    border-top: 1px solid #D9FFF5;
+    font-size: 20px;
+    height: 700px;
+    padding: 20px;
+
+}
+.title {
+    margin-bottom: 30px;
+    position: relative;
+
+
+}
+.title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #41F6D7;
+    top: 5px;
+    width: 3px;
+    height: 35px;
+    left: -20px;
+
+}
+.options ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.options__repair_active {
+    border: 1px solid #41F6D7;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+.promo {
+    justify-content: space-around;
+    color: #1B1C21;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.addinfo {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.read-next {
+    background:transparent;
+    border: white;
+    width: 150px;
+    font-size: 18px;
+    font-family: inherit;
+
+}
+.read-next:hover {
+    opacity: 0.7;
+}
+.addinfopic {
+    float: left;
+}
+.promocontainer {
+    max-width: 500px;
+    margin-right: 50px;
+}
+.promocontainer__description-2 {
+    margin-bottom: 50px;
+}
+.group-pictures {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+.background-search {
+   margin-right: 5px;
+}
+.list li:nth-child(1),
+.list li:nth-child(2),
+.list li:nth-child(3) {
+    visibility: hidden;
+}
+
+@media (min-width: 700px) {
+    .info {
+        display: block;
+    }
+    .list li:nth-child(1),
+    .list li:nth-child(2),
+    .list li:nth-child(3) {
+        visibility: visible;
+    }
+    .logo__button {
+     position: sticky;
+    }
+
+}
+@media (min-width: 1200px) {
+    .group-pictures {
+        width: 700px;
+        height: 450px;
+    }
+    .promocontainer {
+        align-self: flex-start;
+        margin-top: 50px;
+    }
+    .options {
+        min-width: 1200px;
+        justify-content: space-evenly;
+    }
+    .list li:nth-child(1),
+    .list li:nth-child(2),
+    .list li:nth-child(3) {
+        visibility: hidden;
+    }
+    .list li:nth-child(4) {
+        right: 250px;
+    }
+    .list li:nth-child(4)::before {
+        content: "Оставить заявку";
+        font-weight: bold;
+        margin-right: 10px;
+
+    }
+    .list li:nth-child(5)::before {
+        content: "Статус ремонта";
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+}
+
